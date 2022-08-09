@@ -6,6 +6,7 @@ import (
 
 	"github.com/Ungine-Tech/redirector/bootstrap"
 	"github.com/Ungine-Tech/redirector/router"
+	"github.com/gin-gonic/gin"
 )
 
 var (
@@ -19,6 +20,10 @@ func init() {
 	flag.StringVar(&port, "p", ":80", "port")
 	flag.BoolVar(&dev, "D", false, "dev mode")
 	flag.Parse()
+
+	if !dev {
+		gin.SetMode(gin.ReleaseMode)
+	}
 
 	bootstrap.Init(target)
 }
