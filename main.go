@@ -26,8 +26,8 @@ func init() {
 
 	flag.BoolVar(&enableHttps, "s", false, "enable https")
 	flag.StringVar(&httpsPort, "sp", ":443", "https port")
-	flag.StringVar(&pemFile, "pem", "", "pem file")
-	flag.StringVar(&keyFile, "key", "", "key file")
+	flag.StringVar(&pemFile, "pem", "./cert.pem", "pem file")
+	flag.StringVar(&keyFile, "key", "./cert.key", "key file")
 
 	flag.Parse()
 
