@@ -5,7 +5,7 @@
 ## 参数
 
 * `-D` 开启Gin调试模式
-* `-t <url>` 指定要跳转的模板URL，默认为 `http://localhost`
+* `-t <url>` 指定要跳转的模板URL，默认为 `http://localhost/{{path}}`
 * `-p <port>` 跳转端口，默认为 `:80`
 * `-s` 是否启用HTTPS
 * `-sp <port>` HTTPS端口，默认为 `:443`

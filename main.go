@@ -20,7 +20,7 @@ var (
 
 func init() {
 	flag.BoolVar(&dev, "D", false, "dev mode")
-	flag.StringVar(&target, "t", "http://localhost", "target url")
+	flag.StringVar(&target, "t", "http://localhost/{{path}}", "target url")
 
 	flag.StringVar(&port, "p", ":80", "port")
 
